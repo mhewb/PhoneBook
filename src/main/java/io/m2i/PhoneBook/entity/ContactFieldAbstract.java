@@ -9,10 +9,7 @@ public abstract class ContactFieldAbstract {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long identifier; // Company/Home/etc
-    @ManyToOne
-    @JoinColumn(name = "contact_fk")
-    private Contact contact;
+    private String identifier; // Company/Home/etc
 
     public Long getId() {
         return id;
@@ -22,19 +19,12 @@ public abstract class ContactFieldAbstract {
         this.id = id;
     }
 
-    public Long getIdentifier() {
+    public String getIdentifier() {
         return identifier;
     }
 
-    public void setIdentifier(Long identifier) {
+    public void setIdentifier(String identifier) {
         this.identifier = identifier;
     }
 
-    public Contact getContact() {
-        return contact;
-    }
-
-    public void setContact(Contact contact) {
-        this.contact = contact;
-    }
 }
