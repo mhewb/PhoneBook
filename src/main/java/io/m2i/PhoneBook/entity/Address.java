@@ -13,7 +13,6 @@ public class Address extends ContactFieldAbstract {
     private String zipCode;
     private String city;
 
-
     public Address() {
     }
 
