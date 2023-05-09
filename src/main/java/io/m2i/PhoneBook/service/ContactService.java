@@ -22,9 +22,12 @@ public class ContactService {
         return contactRepository.findById(id);
     }
 
-
-
-
+    public void save(Contact contact) {
+        contactRepository.save(contact);
+    }
+    public void deleteById(Long id) {
+        contactRepository.deleteById(id);
+    }
 
 }
 

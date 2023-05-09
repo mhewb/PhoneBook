@@ -33,7 +33,7 @@ public class ContactRestController {
 
 
         List<ContactDTO> contactList = userService
-                .fetchAllContactPerUserId(id)
+                .fetchById(id).get().getContactList()
                 .stream()
                 .map(Contact::toDTO)
                 .collect(Collectors.toList());
