@@ -10,7 +10,7 @@ public class User extends PeopleAbstract {
     private String email;
     private String password;
 
-    @OneToMany
+    @OneToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     @JoinColumn(name = "user_id")
     private List<Contact> contactList;
 
