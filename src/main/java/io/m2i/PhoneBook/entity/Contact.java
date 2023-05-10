@@ -1,6 +1,5 @@
 package io.m2i.PhoneBook.entity;
 
-import io.m2i.PhoneBook.api.dto.ContactDTO;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -30,26 +29,6 @@ public class Contact extends PeopleAbstract {
     private List<Address> AddressList;
 
     public Contact() {
-    }
-
-    public ContactDTO toDTO() {
-
-        ContactDTO dto = new ContactDTO();
-
-        dto.setId(this.getId());
-        dto.setFirstname(this.getFirstname());
-        dto.setLastname(this.getLastname());
-        dto.setAvatarUrl(this.getAvatarUrl());
-        dto.setDateOfBirth(this.getDateOfBirth());
-        dto.setNickname(this.getNickname());
-        dto.setCompanyName(this.getCompanyName());
-        dto.setJobTitle(this.getJobTitle());
-        dto.setNotes(this.getNotes());
-        dto.setEmailList(this.getEmailList());
-        dto.setPhoneNumberList(this.getPhoneNumberList());
-        dto.setAddressList(this.getAddressList());
-
-        return dto;
     }
 
     public String getNickname() {
