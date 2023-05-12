@@ -16,29 +16,6 @@ public class UserDTO {
     public UserDTO() {
     }
 
-    public UserDTO(Long id, String firstname, String lastname,
-                   String avatarUrl, LocalDate dateOfBirth,
-                   String email, List<ContactDTO> contactDTOs) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.avatarUrl = avatarUrl;
-        this.dateOfBirth = dateOfBirth;
-        this.email = email;
-        this.contactDTOs = contactDTOs;
-    }
-
-    public UserDTO(String firstname, String lastname,
-                   String avatarUrl, LocalDate dateOfBirth,
-                   String email, List<ContactDTO> contactDTOs) {
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.avatarUrl = avatarUrl;
-        this.dateOfBirth = dateOfBirth;
-        this.email = email;
-        this.contactDTOs = contactDTOs;
-    }
-
     public Long getId() {
         return id;
     }

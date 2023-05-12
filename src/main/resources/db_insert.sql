@@ -22,3 +22,7 @@ VALUES
     ('Office', 'Los Angeles', 'Suite 200', '456', 'Wilshire Boulevard', 'West', '90001', 1),
     ('Summer House', 'Miami', 'Villa 5', '789', 'Ocean Drive', 'South', '33010', 2),
     ('Parents House', 'Chicago', 'Second Floor', '246', 'State Street', 'North', '60601', 3);
+
+INSERT INTO PhoneBook.role(name) VALUES
+    ('USER'), ('ADMIN');
+
